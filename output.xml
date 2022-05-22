@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.5 on win32)" generated="20220522 00:23:17.068" rpa="false" schemaversion="3">
+<suite id="s1" name="Mouseover" source="C:\Users\LORD TRADE\PycharmProjects\seleniump\tests\mouseover.robot">
+<test id="s1-t1" name="orange" line="16">
+<kw name="key">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/LORD TRADE/AppData/Roaming/Python/Python39/Scripts/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220522 00:23:17.374" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220522 00:23:17.374" endtime="20220522 00:23:23.248"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220522 00:23:23.249" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20220522 00:23:23.248" endtime="20220522 00:23:28.642"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220522 00:23:28.643" endtime="20220522 00:23:28.789"/>
+</kw>
+<status status="PASS" starttime="20220522 00:23:17.374" endtime="20220522 00:23:28.790"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>xpath://ul[@class='top-menu notmobile']//a[normalize-space()='Computers']</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220522 00:23:28.791" level="INFO">Simulating Mouse Down on element 'xpath://ul[@class='top-menu notmobile']//a[normalize-space()='Computers']'.</msg>
+<status status="PASS" starttime="20220522 00:23:28.790" endtime="20220522 00:23:29.109"/>
+</kw>
+<status status="PASS" starttime="20220522 00:23:17.373" endtime="20220522 00:23:29.110"/>
+</test>
+<status status="PASS" starttime="20220522 00:23:17.084" endtime="20220522 00:23:29.111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mouseover">Mouseover</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
